@@ -1,0 +1,31 @@
+{
+  "input": "data/full_dataset_111patients.csv",
+  "id_col": "Subject",
+  "label_col": "Label",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "repeats": 10,
+  "seed": 42,
+  "existing_fold_metrics": "analysis/results_repeat10/fold_metrics.csv",
+  "xgboost_scale_pos_weight": 0.32142857142857145,
+  "pairs_detected": [
+    "CA1",
+    "CA2",
+    "CA3",
+    "CA4",
+    "Cystic",
+    "DG",
+    "SRLM",
+    "Subiculum",
+    "Total",
+    "gyrification",
+    "intrinsic curvature",
+    "mean curvature",
+    "thickness"
+  ],
+  "models_run": [
+    "lr_en",
+    "random_forest",
+    "xgboost"
+  ]
+}
